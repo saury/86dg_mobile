@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+//based on ionic
+@import
+  // Ionicons
+  "ionic/ionicons/ionicons.scss",
+
+  // Variables
+  "ionic/mixins",
+  "ionic/variables",
+
+  // Variables customed
+  "variables&mixins",
+
+  // Base
+  "ionic/reset",
+  "ionic/scaffolding",
+  "ionic/type",
+
+  // Components
+  "ionic/action-sheet",
+  "ionic/backdrop",
+  "ionic/bar",
+  "ionic/tabs",
+  "ionic/menu",
+  "ionic/modal",
+  "ionic/popover",
+  "ionic/popup",
+  "ionic/loading",
+  "ionic/items",
+  "ionic/list",
+  "ionic/badge",
+  "ionic/slide-box",
+  "ionic/slides",
+  "ionic/refresher",
+  "ionic/spinner",
+
+  // Forms
+  "ionic/form",
+  "ionic/checkbox",
+  "ionic/toggle",
+  "ionic/radio",
+  // "ionic/range",
+  "ionic/select",
+  // "ionic/progress",
+
+  // Buttons
+  "ionic/button",
+  // "ionic/button-bar",
+
+  // Util
+  "ionic/grid",
+  "ionic/util",
+  "ionic/platform",
+
+  // Animations
+  "ionic/animations",
+  "ionic/transitions";
