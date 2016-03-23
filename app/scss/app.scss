@@ -4,13 +4,14 @@
 @import
   // Ionicons
   "ionic/ionicons/ionicons.scss",
+  
+  // Variables customed
+  "variables&mixins",
 
   // Variables
   "ionic/mixins",
   "ionic/variables",
 
-  // Variables customed
-  "variables&mixins",
 
   // Base
   "ionic/reset",
@@ -55,4 +56,9 @@
 
   // Animations
   "ionic/animations",
-  "ionic/transitions";
+  "ionic/transitions",
+
+  // Home page
+  "home"
+
+  ;

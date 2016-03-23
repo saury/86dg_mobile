@@ -1,0 +1,70 @@
+<ion-view id="home" view-title="首页" hide-back-button="true" cache-view="false">
+    <ion-header-bar align-title="center" class="bar-assertive">
+        <div class="buttons">
+            <h3 class="light"><i class="ion-navicon-round"></i></h3>
+        </div>
+        <div class="title">
+            <a class="headerBar-search" ng-href="#/search">
+                <span></span>
+                <div>
+                    <input maxlength="20" autocomplete="true" value="鲜虾鱼板面" />
+                </div>
+            </a>
+        </div>
+        <div class="buttons">
+            <h3 class="light"><i class="ion-chatbubble-working"></i></h3>
+        </div>
+    </ion-header-bar>
+    <ion-content id="home-content" class="scroll-content">
+        <!-- carousel start -->
+        <ion-slide-box auto-play="true" does-continue="true">
+            <ion-slide ng-repeat="item in headerSlideData">
+                <a href="{{item.href}}">
+                    <img alt="{{item.alt}}" ng-src="{{item.src}}" class="full-image" height="235">
+                </a>
+            </ion-slide>
+        </ion-slide-box>
+        <!-- carousel end -->
+        <!-- list row 20% each start -->
+        <div class="row row-wrap">
+            <div class="col col-20" ng-repeat="item in categoryData">
+                <div class="list" ui-sref="indexTab.category">
+                    <div class="item-image">
+                        <img ng-src="images/home/{{item.description}}.jpg">
+                    </div>
+                    <p class="text-center">{{item.description}}</p>
+                </div>
+            </div>
+        </div>
+        <!-- list row 20% each end -->
+        <!-- ad post start-->
+        <ion-slide-box show-pager="false" auto-play="true" does-continue="true">
+            <ion-slide>
+                <img ng-src="images/home/home-ad-1.jpg" class="full-image">
+            </ion-slide>
+            <ion-slide>
+                <img ng-src="images/home/home-ad-2.jpg" class="full-image">
+            </ion-slide>
+            <ion-slide>
+                <img ng-src="images/home/home-ad-3.jpg" class="full-image">
+            </ion-slide>
+        </ion-slide-box>
+        <!-- ad post end -->
+        <!-- list row 50% each start -->
+        <div class="row row-wrap">
+            <div class="row">好货推荐</div>
+            <div class="col col-50" ng-repeat="item in categoryData">
+                <div class="list" ui-sref="indexTab.category">
+                    <div class="item-image">
+                        <img ng-src="images/home/nav{{item.order}}.png">
+                    </div>
+                    <span>Mock upMock upMock upMock upMock upMock upMock up</span>
+                    <p>￥39.00 <s>￥59.00</s></p>
+                </div>
+            </div>
+        </div>
+        <!-- list row 50% each end -->
+        <!--回到顶部的区块-->
+        <div class="back_top"></div>
+    </ion-content>
+</ion-view>
