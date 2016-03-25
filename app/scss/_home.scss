@@ -35,6 +35,12 @@ ion-header-bar {
 }
 
 .home-list {
+	background: #ebebeb;
+	padding: 0;
+	margin: 0 -5px;
+	.col-50{
+    	background: #fff;
+	}
     .list {
         span {
             @include ellipsis_line();

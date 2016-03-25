@@ -11335,6 +11335,14 @@ ion-header-bar .search-bar input::-webkit-input-placeholder {
   text-indent: 0;
 }
 
+.home-list {
+  background: #ebebeb;
+  padding: 0;
+  margin: 0 -5px;
+}
+.home-list .col-50 {
+  background: #fff;
+}
 .home-list .list span {
   display: -webkit-box;
   display: -moz-box;
