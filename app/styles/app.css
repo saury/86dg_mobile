@@ -3696,6 +3696,8 @@
   content: "";
 }
 
+/* variables */
+/* mixins */
 /**
  * Resets
  * --------------------------------------------------
@@ -4090,7 +4092,7 @@ body,
   overflow: hidden;
   margin: 0;
   padding: 0;
-  color: #000;
+  color: #333;
   word-wrap: break-word;
   font-size: 14px;
   font-family: -apple-system;
@@ -4290,7 +4292,7 @@ ion-infinite-scroll:not(.active) .icon:before {
 
 /* If you change these, change platform.scss as well */
 .has-header {
-  top: 44px;
+  top: 48px;
 }
 
 .no-header {
@@ -4298,23 +4300,23 @@ ion-infinite-scroll:not(.active) .icon:before {
 }
 
 .has-subheader {
-  top: 88px;
+  top: 96px;
 }
 
 .has-tabs-top {
-  top: 93px;
+  top: 97px;
 }
 
 .has-header.has-subheader.has-tabs-top {
-  top: 137px;
+  top: 145px;
 }
 
 .has-footer {
-  bottom: 44px;
+  bottom: 48px;
 }
 
 .has-subfooter {
-  bottom: 88px;
+  bottom: 96px;
 }
 
 .has-tabs,
@@ -4328,11 +4330,11 @@ ion-infinite-scroll:not(.active) .icon:before {
 }
 
 .bar-subfooter.has-tabs {
-  bottom: 93px;
+  bottom: 97px;
 }
 
 .has-footer.has-tabs {
-  bottom: 93px;
+  bottom: 97px;
 }
 
 .pane {
@@ -4397,7 +4399,7 @@ cite {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  color: #000;
+  color: #333;
   font-weight: 500;
   font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
   line-height: 1.2;
@@ -4745,7 +4747,7 @@ a.subdued:last-child {
   box-sizing: border-box;
   padding: 5px;
   width: 100%;
-  height: 44px;
+  height: 48px;
   border-width: 0;
   border-style: solid;
   border-top: 1px solid transparent;
@@ -4902,13 +4904,13 @@ a.subdued:last-child {
   overflow: hidden;
   margin: 0 10px;
   min-width: 30px;
-  height: 43px;
+  height: 47px;
   text-align: center;
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: 17px;
   font-weight: 500;
-  line-height: 44px;
+  line-height: 48px;
 }
 .bar .title.title-left {
   text-align: left;
@@ -5008,7 +5010,7 @@ a.subdued:last-child {
 }
 .platform-android .bar .title {
   font-size: 19px;
-  line-height: 44px;
+  line-height: 48px;
 }
 
 .bar-light .button {
@@ -5247,7 +5249,7 @@ a.subdued:last-child {
   border-top-width: 1px;
   border-bottom-width: 0;
   background-position: top;
-  height: 44px;
+  height: 48px;
 }
 .bar-footer.item-input-inset {
   position: absolute;
@@ -5258,15 +5260,15 @@ a.subdued:last-child {
 }
 
 .bar-subheader {
-  top: 44px;
+  top: 48px;
   display: block;
-  height: 44px;
+  height: 48px;
 }
 
 .bar-subfooter {
-  bottom: 44px;
+  bottom: 48px;
   display: block;
-  height: 44px;
+  height: 48px;
 }
 
 .nav-bar-block {
@@ -6130,7 +6132,7 @@ ion-tabs.tabs-color-active-dark .tab-item.tab-item-active, ion-tabs.tabs-color-a
 /* If you change this, change platform.scss as well */
 .tabs-top > .tabs,
 .tabs.tabs-top {
-  top: 44px;
+  top: 48px;
   padding-top: 0;
   background-position: bottom;
   border-top-width: 0;
@@ -6450,27 +6452,27 @@ ion-tabs.tabs-color-active-dark .tab-item.tab-item-active, ion-tabs.tabs-color-a
   }
 
   .platform-ios.platform-cordova .modal-wrapper .modal .bar-header:not(.bar-subheader) {
-    height: 44px;
+    height: 48px;
   }
   .platform-ios.platform-cordova .modal-wrapper .modal .bar-header:not(.bar-subheader) > * {
     margin-top: 0;
   }
   .platform-ios.platform-cordova .modal-wrapper .modal .tabs-top > .tabs,
   .platform-ios.platform-cordova .modal-wrapper .modal .tabs.tabs-top {
-    top: 44px;
+    top: 48px;
   }
   .platform-ios.platform-cordova .modal-wrapper .modal .has-header,
   .platform-ios.platform-cordova .modal-wrapper .modal .bar-subheader {
-    top: 44px;
+    top: 48px;
   }
   .platform-ios.platform-cordova .modal-wrapper .modal .has-subheader {
-    top: 88px;
+    top: 96px;
   }
   .platform-ios.platform-cordova .modal-wrapper .modal .has-header.has-tabs-top {
-    top: 93px;
+    top: 97px;
   }
   .platform-ios.platform-cordova .modal-wrapper .modal .has-header.has-subheader.has-tabs-top {
-    top: 137px;
+    top: 145px;
   }
 
   .modal-backdrop-bg {
@@ -11043,7 +11045,7 @@ a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button
  * Platform specific tweaks
  */
 .platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) {
-  height: 64px;
+  height: 68px;
 }
 .platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader).item-input-inset .item-input-wrapper {
   margin-top: 19px !important;
@@ -11053,23 +11055,23 @@ a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button
 }
 .platform-ios.platform-cordova:not(.fullscreen) .tabs-top > .tabs,
 .platform-ios.platform-cordova:not(.fullscreen) .tabs.tabs-top {
-  top: 64px;
+  top: 68px;
 }
 .platform-ios.platform-cordova:not(.fullscreen) .has-header,
 .platform-ios.platform-cordova:not(.fullscreen) .bar-subheader {
-  top: 64px;
+  top: 68px;
 }
 .platform-ios.platform-cordova:not(.fullscreen) .has-subheader {
-  top: 108px;
+  top: 116px;
 }
 .platform-ios.platform-cordova:not(.fullscreen) .has-header.has-tabs-top {
-  top: 113px;
+  top: 117px;
 }
 .platform-ios.platform-cordova:not(.fullscreen) .has-header.has-subheader.has-tabs-top {
-  top: 157px;
+  top: 165px;
 }
 .platform-ios.platform-cordova .popover .bar-header:not(.bar-subheader) {
-  height: 44px;
+  height: 48px;
 }
 .platform-ios.platform-cordova .popover .bar-header:not(.bar-subheader).item-input-inset .item-input-wrapper {
   margin-top: -1px;
@@ -11079,10 +11081,10 @@ a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button
 }
 .platform-ios.platform-cordova .popover .has-header,
 .platform-ios.platform-cordova .popover .bar-subheader {
-  top: 44px;
+  top: 48px;
 }
 .platform-ios.platform-cordova .popover .has-subheader {
-  top: 88px;
+  top: 96px;
 }
 .platform-ios.platform-cordova.status-bar-hide {
   margin-bottom: 20px;
@@ -11283,6 +11285,64 @@ a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s;
+}
+
+.flex-right {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
+}
+.flex-left {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+ion-header-bar .search-bar {
+  position: relative;
+  margin: 2px;
+  height: 2px;
+  padding: 2px;
+  display: inherit;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-top: 0;
+}
+ion-header-bar .search-bar-inner {
+  display: inherit;
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+}
+ion-header-bar .search-bar input {
+  font-size: 1rem;
+  background: transparent;
+  color: #fff;
+}
+ion-header-bar .search-bar input::-moz-placeholder {
+  color: #fff;
+}
+ion-header-bar .search-bar input:-ms-input-placeholder {
+  color: #fff;
+}
+ion-header-bar .search-bar input::-webkit-input-placeholder {
+  color: #fff;
+  text-indent: 0;
+}
+
+.home-list .list span {
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  overflow: hidden;
+  padding: 4px 8px;
 }
 
 /*# sourceMappingURL=app.css.map */

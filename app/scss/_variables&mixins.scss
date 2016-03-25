@@ -1,3 +1,20 @@
+/* variables */
 // Colors
+$base-color:					  #333;
 $assertive:                       #ff4c5b !default;
 $button-assertive-border:		  #ff4c5b !default;
+
+// header
+$bar-height:                      48px !default;
+
+
+/* mixins */
+// ellipsis
+@mixin ellipsis_line($line_num:2){
+	display: -webkit-box;
+	display: -moz-box;
+    -webkit-line-clamp: $line_num;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    overflow: hidden;
+}

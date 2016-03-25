@@ -1,0 +1,44 @@
+.flex {
+    &-right {
+        @include justify-content(flex-end);
+    }
+    &-left {
+        @include justify-content(flex-start);
+    }
+}
+
+ion-header-bar {
+    .search-bar {
+        position: relative;
+        margin: 2px;
+        height: 2px;
+        padding: 2px;
+        // margin: 0 50px;
+        display: inherit;
+        background: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+        border-top: 0;
+        &-inner {
+            display: inherit;
+            position: absolute;
+            bottom: -2px;
+            width: 100%;
+        }
+        input {
+            font-size: 1rem;
+            background: transparent;
+            color: #fff;
+            @include placeholder(#fff);
+        }
+    }
+}
+
+.home-list {
+    .list {
+        span {
+            @include ellipsis_line();
+            padding: 4px 8px;
+        }
+    }
+}

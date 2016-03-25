@@ -1,27 +1,28 @@
 <ion-view id="home" view-title="首页" hide-back-button="true" cache-view="false">
-    <ion-header-bar align-title="center" class="bar-assertive">
-        <div class="buttons">
-            <h3 class="light"><i class="ion-navicon-round"></i></h3>
+    <ion-header-bar align-title="center" class="bar-assertive row">
+        <div class="buttons col col-10 flex-right">
+            <i class="light h3 ion-navicon-round"></i>
         </div>
-        <div class="title">
-            <a class="headerBar-search" ng-href="#/search">
-                <span></span>
-                <div>
-                    <input maxlength="20" autocomplete="true" value="鲜虾鱼板面" />
-                </div>
-            </a>
+        <div class="col col-80 search-bar col-bottom">
+            <div class="search-bar-inner">
+                <div class="buttons col col-10 flex-right"><i class="icon ion-ios-search placeholder-icon light"></i></div>
+                <input class="col col-70" type="text" placeholder="鲜虾鱼板面">
+                <button class="col col-20 button button-clear">
+                    GO
+                </button>
+            </div>
         </div>
-        <div class="buttons">
-            <h3 class="light"><i class="ion-chatbubble-working"></i></h3>
+        <div class="buttons col col-10">
+            <i class="light h3 ion-chatbubble-working"></i>
         </div>
     </ion-header-bar>
     <ion-content id="home-content" class="scroll-content">
         <!-- carousel start -->
         <ion-slide-box auto-play="true" does-continue="true">
             <ion-slide ng-repeat="item in headerSlideData">
-                <a href="{{item.href}}">
+                <!-- <a href="{{item.href}}"> -->
                     <img alt="{{item.alt}}" ng-src="{{item.src}}" class="full-image" height="235">
-                </a>
+                <!-- </a> -->
             </ion-slide>
         </ion-slide-box>
         <!-- carousel end -->
@@ -51,14 +52,14 @@
         </ion-slide-box>
         <!-- ad post end -->
         <!-- list row 50% each start -->
-        <div class="row row-wrap">
+        <div class="home-list row row-wrap">
             <div class="row">好货推荐</div>
             <div class="col col-50" ng-repeat="item in categoryData">
-                <div class="list" ui-sref="indexTab.category">
+                <div class="list"><!-- ui-sref="indexTab.category" -->
                     <div class="item-image">
                         <img ng-src="images/home/nav{{item.order}}.png">
                     </div>
-                    <span>Mock upMock upMock upMock upMock upMock upMock up</span>
+                    <span>好货推荐好货推荐好货推荐好货推荐好货推荐好货推荐好货推荐好货推荐好货推荐好货推荐好货推荐好货推荐</span>
                     <p>￥39.00 <s>￥59.00</s></p>
                 </div>
             </div>
